@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td {
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+header,
+footer,
+nav,
+section,
+article,
+aside,
+figure,
+figcaption {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+a {
+	color: #333;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+.header_nav_sns_list a img {
+	width: 50px;
+}
+
+.header {
+	background-color: #333;
+	color: #fff;
+	position: fixed;
+}
+

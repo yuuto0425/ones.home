@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'responsive' ;
+@import 'variables';
+
+.header_nav_sns_list {
+    a {
+        img {
+            width: 50px;
+        }
+    }
+}

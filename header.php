@@ -21,14 +21,14 @@
                 </h1>
                 <nav class="header_nav">
                     <ul class="header_nav_lists">
-                        <li class="header_nav_list"><a href="">ホーム</a></li>
-                        <li class="header_nav_list"><a href="">物件情報</a></li>
-                        <li class="header_nav_list"><a href="">特徴</a></li>
-                        <li class="header_nav_list"><a href="">スタッフ紹介</a></li>
-                        <li class="header_nav_list"><a href="">イベント情報</a></li>
+                        <li class="header_nav_list"><a href="<?php echo esc_url(home_url('/'));?>">ホーム</a></li>
+                        <li class="header_nav_list"><a href="<?php echo esc_url(home_url('home-info'));?>">物件情報</a></li>
+                        <li class="header_nav_list"><a href="<?php echo esc_url(home_url('/'));?>#future">特徴</a></li>
+                        <li class="header_nav_list"><a href="<?php echo esc_url(home_url('/'));?>#staff">スタッフ紹介</a></li>
+                        <li class="header_nav_list"><a href="<?php echo esc_url(home_url('event'));?>">イベント情報</a></li>
                     </ul>
                     <div class="header_nav_bottom">
-                        <a href="" class="header_button">無料相談のご予約</a>
+                        <a href="<?php echo esc_url(home_url('event'));?>" class="header_button">無料相談のご予約</a>
                         <ul class="header_nav_sns_lists">
                             <li class="header_nav_sns_list"><a href=""><img src="<?php echo get_template_directory_uri();?>/img/sns/instagram.png" alt="instagram"></a></li>
                             <li class="header_nav_sns_list"><a href=""><img src="<?php echo get_template_directory_uri();?>/img/sns/twitter.png" alt="twitter"></a></li>

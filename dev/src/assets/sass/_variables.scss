@@ -8,11 +8,17 @@ $font_default_color: #222222;//都度変更
 $font_sub_color: #FFF;//都度変更
 
 // 背景色
-$bg_default: #f3efeb;//都度変更
-$bg_accent: #eae0d5;//都度変更
-$bg_white: #fff;//都度変更
+$bg_main: #FFF;//都度変更
+$bg_sub_main: #DBDFD8;//都度変更
+$bg_accent: #fff;//都度変更
+$bg_sub_accent: #fff;//都度変更
 
 // インナー幅
-$width__inner__pc: 1180px;//都度変更
+$width__inner__pc: 1200px;//都度変更
 $width__inner__tab: 777px;//都度変更
 $width__inner__sp: 335px;//都度変更
+
+//ボタンカラー
+$btn_main_color:#535D60;
+//角丸
+$border_main:10px;

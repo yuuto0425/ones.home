@@ -1,27 +1,68 @@
 @import 'variables';
+.main {
+    // position: relative;
+}
 .inner {
     max-width: $width__inner__pc;
     width: 100%;
     margin: 0 auto;
+    @include mq('md') {
+        padding: 0 40px;
+    }
+    @include mq('sm') {
+        padding: 0 20px;
+    }
 }
-
-.section {
-    &_content {
-        padding: 120px 0;
-    }
-    &_title {
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-    }
+.l-inner {
+    max-width: $width__inner__pc;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px ;
+    // @include mq('md') {
+    //     padding: 0 40px;
+    // }
+    // @include mq('sm') {
+    //     padding: 0 20px;
+    // }
+}
+.l_header {
+    position: relative;
+    z-index: 1;
+}
+.section_content {
+    padding: 120px 0;
+}
+.section_title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
 }
 .l_mv {
     height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     &.home_info {
         background-image: url(../img/l-home-info/l-home-info-mv.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    }
+    &.l_company {
+        background-image: url(../img/l-company/l-company-mvl.png);
+    }
+    &.l_qa {
+        background-image: url(../img/l-qa/l-qa-mv.png);
+    }
+    &.l_event {
+        background-image: url(../img/l-event/l-event-mv.png);
+        // &::before {
+        //     content: "";
+        //     // background-color: ;
+        // }
+    }
+    &.l_contact {
+        background-image: url(../img/l-contact/l-contact-mv.png);
+    }
+    &.l_document {
+        background-image:url(../img/document/l-document-mv.png);
     }
 }
 .l_cate {
@@ -31,4 +72,42 @@
     height: 100%;
     font-weight: bold;
     font-size: 48px;
+    &.l_company {
+        
+    }
+}
+
+.paginate_items {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.page-numbers {
+    // display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    // font-weight: bold;
+    padding: 13px 20px;
+    color: $font_sub_color;
+    background-color: $bg_accent;
+    &:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+.current {
+}
+.next,.prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+    }
+}
+.next {
+}
+.prev {
 }

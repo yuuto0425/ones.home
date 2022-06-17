@@ -9,61 +9,7 @@
         <div class="home_info_inner inner">
             <div class="home_info_content section_content">
                 <h2 class="home_info_title section_title">物件情報</h2>
-                <div class="home_info_cate_wrapper">
-                    <div class="home_info_cate_left">
-                        <div class="home_info_cate_left_map">
-                            <h3 class="home_info_cate_left_map_title">エリアで探す</h3>
-                            <?php
-                            $args = array(
-                                'order' => 'ASC',
-                                'orderby' => 'id',
-                                'parent' => 4,
-                            );
-                            $categories = get_categories($args);
-                            ?>
-                            <?php foreach ($categories as $category) : ?>
-                                <a href="<?php echo get_category_link($category->term_id); ?>"><?php echo $category->name; ?></a>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                    <div class="home_info_cate_right">
-                        <div class="home_info_cate_right_wrap">
-                            <div class="home_info_cate_right_price">
-                                <h3 class="home_info_cate_right_price_title">家賃の価格から探す</h3>
-                                <div class="home_info_cate_right_price_btn">
-                                    <?php
-                                    $args = array(
-                                        'order' => 'ASC',
-                                        'orderby' => 'id',
-                                        'parent' => 1,
-                                    );
-                                    $categories = get_categories($args);
-                                    ?>
-                                    <?php foreach ($categories as $category) : ?>
-                                        <a href="<?php echo get_category_link($category->term_id); ?>"><?php echo $category->name; ?><span>万円</span></a>
-                                    <?php endforeach; ?>
-                                </div>
-                            </div>
-                            <div class="home_info_cate_right_type">
-                                <h3 class="home_info_cate_right_type_title">建物の種別から探す</h3>
-                                <div class="home_info_cate_right_type_btn">
-                                    <?php
-                                    $args = array(
-                                        'order' => 'ASC',
-                                        'orderby' => 'id',
-                                        'parent' => 3,
-                                    );
-                                    $categories = get_categories($args);
-                                    ?>
-                                    <?php foreach ($categories as $category) : ?>
-                                        <a href="<?php echo get_category_link($category->term_id); ?>"><?php echo $category->name; ?></a>
-                                    <?php endforeach; ?>
-                                </div>
-                            </div>
-                            <a href="<?php echo esc_url(home_url('popular')); ?>" class="home_info_cate_right_order">人気順で見てみる</a>
-                        </div>
-                    </div>
-                </div>
+                <?php get_template_part('template/map');?>
             </div>
         </div>
     </section>
@@ -119,16 +65,50 @@
                 <div class="staff_title section_title">スタッフ紹介</div>
                 <div class="staff_content_rows">
                     <div class="staff_content_row">
-                        <img src="" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-sutaff01.png" alt="">
                         <div class="staff_content_row_body">
                             <div class="staff_content_row_body_top">
-                                <p class="staff_content_row_body_name"></p>
-                                <p class="staff_content_row_body_type"></p>
+                                <p class="staff_content_row_body_name">田中太郎</p>
+                                <p class="staff_content_row_body_type">設計コーディネーター</p>
                             </div>
-                            <p class="staff_content_row_body_message"></p>
+                            <p class="staff_content_row_body_message">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキスト
+
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                         </div>
                     </div>
-                    <!-- 3回繰り返し -->
+                    <div class="staff_content_row">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-sutaff01.png" alt="">
+                        <div class="staff_content_row_body">
+                            <div class="staff_content_row_body_top">
+                                <p class="staff_content_row_body_name">田中太郎</p>
+                                <p class="staff_content_row_body_type">設計コーディネーター</p>
+                            </div>
+                            <p class="staff_content_row_body_message">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキスト
+
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                    </div>
+                    <div class="staff_content_row">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-sutaff01.png" alt="">
+                        <div class="staff_content_row_body">
+                            <div class="staff_content_row_body_top">
+                                <p class="staff_content_row_body_name">田中太郎</p>
+                                <p class="staff_content_row_body_type">設計コーディネーター</p>
+                            </div>
+                            <p class="staff_content_row_body_message">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキスト
+
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,26 +118,43 @@
             <div class="event_content section_content">
                 <h2 class="event_title section_title">イベント情報</h2>
                 <ul class="event_content_card_items">
-                    <li class="event_content_card_item">
-                        <article>
-                            <a href="">
-                                <img src="" alt="">
-                                <time datetime=""></time>
-                                <p class="message"></p>
-                            </a>
-                        </article>
-                    </li>
+                    <?php
+                    $args = array(
+                        'post_type' => 'event', // カスタム投稿のスラッグ
+                        //通常投稿の場合は、'post'、固定ページの場合は、'page'
+                        'order' => 'rand', // ランダム、並び順
+                        'posts_per_page' => 6, //最大投稿ページ数
+                    );
+                    $my_posts = get_posts($args);
+                    ?>
+                    <?php foreach ($my_posts as $post) : setup_postdata($post); ?>
+                        <li class="event_content_card_item">
+                            <article>
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <?php the_post_thumbnail('thumbnail'); ?>
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/l-home-info/l-home-info-thubnail01.jpg" alt="デフォルト画像" />
+                                    <?php endif; ?>
+                                    <div class="event_item_body">
+                                        <!-- アイキャッチ画像表示 -->
+                                        <time datetime="<?php the_time('c');?>"><?php the_time('Y.m.d'); ?></time>
+                                        <!-- イベントの日付 -->
+                                        <h3 class="event_item_title"><?php the_title();?></h3>
+                                        <!-- イベントのメッセージ -->
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                    <?php endforeach; ?>
+                    <?php wp_reset_postdata(); ?>
                 </ul>
+                <a href="<?php echo esc_url(home_url('event'));?>" class="event_view_more">詳しくはこちら</a>
             </div>
         </div>
     </section>
-    <section class="contact js-page-position">
-        <div class="contact_inner inner">
-            <div class="contact_content section_content">
-                <a href="">無料ご相談のご予約はこちら</a>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part('template/contact-link');?>
+
 </main>
 <?php get_template_part('template-js/videos'); ?>
 <?php get_footer(); ?>

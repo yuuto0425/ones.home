@@ -40,27 +40,18 @@
         </div>
     </header>
     <div class="l_mv 
-    <?php if (is_category('home-info') || is_home('home-info') || is_single() || is_archive('popular')) : ?>home_info<?php endif; ?>
         <?php if (is_page('company')) : ?> l_company<?php endif; ?>
         <?php if (is_page('qa')) : ?> l_qa<?php endif; ?>
         <?php if (is_post_type_archive('event') || is_singular('event')) : ?> l_event<?php endif; ?>
-        <?php if (is_page('contact')) : ?> l_contact<?php endif; ?>
-        <?php if (is_page('document')) : ?> l_document<?php endif; ?>
         ">
         <h2 class="l_cate 
-        <?php if (is_category('home-info') || is_home('home-info') || is_single() || is_archive('popular'))  : ?>home_info<?php endif; ?>
             <?php if (is_page('company')) : ?> l_company<?php endif; ?>
             <?php if (is_page('qa')) : ?> l_qa<?php endif; ?>
             <?php if (is_post_type_archive('event') || is_singular('event')) : ?> l_event<?php endif; ?>
-            <?php if (is_page('contact')) : ?> l_contact<?php endif; ?>
-            <?php if (is_page('document')) : ?> l_document<?php endif; ?>
             ">
-            <?php if (is_category('home-info') || is_home('home-info') || is_single() || is_archive('popular')) : ?>物件情報<?php endif; ?>
             <?php if (is_page('company')) : ?> 会社概要<?php endif; ?>
             <?php if (is_page('qa')) : ?> よくある質問<?php endif; ?>
             <?php if ( is_post_type_archive('event') ||  is_singular('event')) : ?>イベント情報<?php endif; ?>
-            <?php if ( is_page('contact')) : ?>無料相談のご予約<?php endif; ?>
-            <?php if ( is_page('document')) : ?>資料請求<?php endif; ?>
         </h2>
     </div>
     <!-- パンくずリストbreadcrumbs -->
